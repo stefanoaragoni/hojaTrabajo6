@@ -3,11 +3,11 @@ import java.util.*;
 public class Factory<E, T>{
   public Map gethash(int valor){
     if (valor == 1){
-      return new HashMap();
+      return new HashMap<E,T>();
     }else if (valor == 2){
-      return new TreeMap();
+      return new TreeMap<E,T>();
     }else {
-      return new LinkedHashMap();
+      return new LinkedHashMap<E,T>();
     }
   }
 }
